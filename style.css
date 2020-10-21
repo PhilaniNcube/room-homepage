@@ -130,6 +130,12 @@ header {
     height: 100%;
 }
 
+.slide-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
 .slide div  {
     padding-top: clamp(3rem, 12vw, 5rem);
     padding-left: 2rem;
@@ -149,7 +155,9 @@ header {
     color: var(--very-dark-gray);
     font-size: 14px;
     text-transform: uppercase;
+    font-size: clamp(.7rem, 1.7vw, 1.3rem);
     letter-spacing: 3px;
+    margin-top: 2rem;
 }
 
 .cta:hover {
@@ -274,4 +282,26 @@ nav {
     nav ul {
         display: none;
     }
+
+    section#about {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+    
+}
+
+
+section#about div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+
 }
